@@ -11,3 +11,28 @@
 .layout{
   @apply bg-white text-black dark:bg-[#090908] dark:text-white h-full selection:bg-gray-100 dark:selection:bg-gray-800
 }
+
+/* Nav section */
+.nav-wrapper{
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+}
+.nav-link-wrapper{
+  @apply hidden sm:ml-6 sm:flex sm:space-x-8 sm:items-center
+}
+.nav-active-link{
+  @apply border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium
+}
+.nav-notactive-link{
+  @apply border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium
+}
+.hamburger{
+  @apply inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 dark:hover:bg-gray-800
+}
+
+/* Mobile Nav */
+.mobile-nav-open{
+ @apply bg-teal-50  border-teal-500 text-teal-500 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:bg-gray-800
+}
+.mobile-nav-close{
+  @apply border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white
+}
