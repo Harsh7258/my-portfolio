@@ -52,3 +52,6 @@
 .home-model-container{
   @apply items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0
 }
+.resume-btn{
+  @apply bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-3xl mt-3 inline-flex items-center dark:text-black
+}
