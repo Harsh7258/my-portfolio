@@ -1,3 +1,19 @@
+# My Personal portfolio
+Tech Stack:- 
+1. Next JS
+2. TypeScript
+3. React
+4. Sanity.io (for dataset api to show projects)
+5. Framer Motion (for magnetic effect)
+6. Tailwind CSS
+
+## npm Packages
+1. create-next-app@latest
+2. @tailwindcss/typography @tailwindcss/forms
+3. next-themes @headlessui/react @prisma/client 
+4. next-sanity
+5. sanity
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
