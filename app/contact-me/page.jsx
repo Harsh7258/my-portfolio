@@ -12,7 +12,7 @@ export default function ContactMe(){
     const sendEmail = (e) => {
      e.preventDefault();
 
-        emailjs.sendForm('service_oaj11vv', 'template_ss9pn84', form.current, 'lzUuUWXclqcauZVsN')
+        emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_APIKEY)
         .then((result) => {
             console.log(result.text);
             alert("Email send successfully! Thank you")
