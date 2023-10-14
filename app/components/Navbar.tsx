@@ -36,15 +36,15 @@ export default function Navbar() {
                                 Home
                             </Link>
                             <Link
-                                href="/about-me"
+                                href="/skills"
                                 prefetch
                                 className={`${
-                                pathName == "/about-me"
+                                pathName == "/skills"
                                     ? "nav-active-link"
                                     : "nav-notactiive-link"
                                 } `}
                             >
-                                About Me
+                                Skills
                             </Link>
                             <Link
                                 href="/projects"
@@ -99,10 +99,10 @@ export default function Navbar() {
                             Home
                         </Link>
 
-                        <Link href="/about-me" prefetch className={`${pathName == "/about-me" ? 
+                        <Link href="/skills" prefetch className={`${pathName == "/about-me" ? 
                         "mobile-nav-open" 
                         : "mobile-nav-close"}`}>
-                            About Me
+                            Skills
                         </Link>
 
                         <Link href="/projects" prefetch className={`${pathName == "/projects" ? 

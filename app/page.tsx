@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import FramerMotion from './components/FramerMotion';
+import  Link  from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -56,7 +58,7 @@ export default function Home() {
               </FramerMotion>
             </a>
 
-            <a href="" target="_blank">
+            <Link href="/contact-me">
               <FramerMotion>
 
               <svg
@@ -68,7 +70,7 @@ export default function Home() {
               </svg>
 
               </FramerMotion>
-            </a>
+            </Link>
 
             <a href="" target="_blank">
               <FramerMotion>
