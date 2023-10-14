@@ -30,7 +30,7 @@ export default function Home() {
           </p>
 
           <div className="flex space-x-5 pt-6">
-            <a href="" target="_blank">
+            <a href="https://github.com/Harsh7258" target="_blank">
               <FramerMotion>
 
               <svg
@@ -44,7 +44,7 @@ export default function Home() {
               </FramerMotion>
             </a>
 
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/k-harsh-naidu-20012928a/" target="_blank">
               <FramerMotion>
 
               <svg
@@ -72,7 +72,7 @@ export default function Home() {
               </FramerMotion>
             </Link>
 
-            <a href="" target="_blank">
+            <a href="https://twitter.com/HarshNa92099478" target="_blank">
               <FramerMotion>
 
               <svg
