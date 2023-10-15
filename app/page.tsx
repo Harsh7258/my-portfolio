@@ -103,7 +103,7 @@ export default function Home() {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hi, I'm Harsh. Nice to meet you.
+            Hi, I&apos;m Harsh. Nice to meet you.
           </p>
           <p>
             A goal-oriented Entry Level Frontend Developer with knowledge of HTML, CSS, JavaScript, React, Firebase, and Figma seeking to use technical proficiency and creativity to develop engaging user experiences and advance in a professional career. Looking to leverage effective debugging, code optimization and project collaboration capabilities to produce applications that exceed user expectations.

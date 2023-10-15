@@ -16,7 +16,7 @@ export default function Skills(){
               <div className="grid grid-cols-2 gap-4 mt-8 items-center">
                   <div className="max-w-sm rounded overflow-hidden shadow-lg dark:shadow-gray-700 shadow-teal-100 h-[580px]">
                   <div className="relative flex h-32 w-full justify-center rounded-xl bg-cover" >
-                    <img src='https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png' className="absolute flex h-32 w-full justify-center rounded-xl bg-cover"/> 
+                    <Image src='https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png' className="absolute flex h-32 w-full justify-center rounded-xl bg-cover" alt="image"/> 
                     <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-[4px] border-white bg-teal-400 dark:!border-navy-700">
                     <Image src={design} className="h-14 w-14 rounded-full" alt="design" />
                     </div>
