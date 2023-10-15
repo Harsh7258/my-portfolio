@@ -14,7 +14,7 @@ export default function Skills(){
             </div>
 
             <div className="mb-6">
-              <div className="grid grid-cols-2 gap-4 mt-8 items-center">
+              <div className="grid sm:gap-6 sm:grid-cols-1 md:gap-6 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-8 items-center">
                   <div className="max-w-sm rounded overflow-hidden shadow-lg dark:shadow-gray-700 shadow-teal-100 h-[580px]">
                   <div className="relative flex h-32 w-full justify-center rounded-xl bg-cover" >
                     <Image src={BG} className="absolute flex h-32 w-full justify-center rounded-xl bg-cover" alt="background"/>

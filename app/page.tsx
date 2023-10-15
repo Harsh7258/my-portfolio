@@ -2,10 +2,12 @@ import Image from 'next/image';
 import FramerMotion from './components/FramerMotion';
 import  Link  from 'next/link';
 
+import Me from '../public/me.png';
+
 export default function Home() {
   return (
     <>
-    <div className="home">
+    <div className="home pb-6">
       <div className="space-y-2 pt-5 pb-8 md:space-x-5">
         <h1 className="home-heading md:leading-13">
           Home
@@ -14,11 +16,11 @@ export default function Home() {
 
       <div className="home-model-container">
         <div className="flex flex-col items-center pt-8">
-          {/* <Image
+          <Image
             alt="Picture of me"
             src={Me}
-            className="h-48 w-48 rounded-full object-cover object-top"
-          /> */}
+            className="h-48 w-48 rounded-full bg-teal-500 object-cover object-top"
+          />
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
             K. Harsh Naidu
           </h3>
@@ -88,7 +90,7 @@ export default function Home() {
           </div>
 
           <FramerMotion>
-            <a href='resume.pdf' download='resume.pdf'>
+            <a href='resume1.pdf' download='resume.pdf'>
               <button 
               className='resume-btn'>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

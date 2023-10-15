@@ -18,8 +18,8 @@ export default function Navbar() {
                         <div className="flex justify-between w-full">
                             <div className="flex items-center">
                                 <Link href="/">
-                                    <h1 className="text-2xl font-medium">
-                                        K. Harsh <span className="text-teal-500">Naidu</span>
+                                    <h1 className="text-xl font-extrabold">
+                                        harsh<span className="text-teal-500">.dev</span>
                                     </h1>
                                 </Link>
                             </div>
@@ -30,7 +30,7 @@ export default function Navbar() {
                                 className={`${
                                 pathName == "/"
                                     ? "nav-active-link"
-                                    : "nav-notactiive-link"
+                                    : "nav-notactive-link"
                                 } `}
                             >
                                 Home
@@ -41,7 +41,7 @@ export default function Navbar() {
                                 className={`${
                                 pathName == "/skills"
                                     ? "nav-active-link"
-                                    : "nav-notactiive-link"
+                                    : "nav-notactive-link"
                                 } `}
                             >
                                 Skills
@@ -52,7 +52,7 @@ export default function Navbar() {
                                 className={`${
                                 pathName == "/projects"
                                     ? "nav-active-link"
-                                    : "nav-notactiive-link"
+                                    : "nav-notactive-link"
                                 } `}
                             >
                                 Projects
@@ -63,7 +63,7 @@ export default function Navbar() {
                                 className={`${
                                 pathName == "/contact-me"
                                     ? "nav-active-link"
-                                    : "nav-notactiive-link"
+                                    : "nav-notactive-link"
                                 } `}
                             >
                                 Contact Me
@@ -99,7 +99,7 @@ export default function Navbar() {
                             Home
                         </Link>
 
-                        <Link href="/skills" prefetch className={`${pathName == "/about-me" ? 
+                        <Link href="/skills" prefetch className={`${pathName == "/skills" ? 
                         "mobile-nav-open" 
                         : "mobile-nav-close"}`}>
                             Skills
