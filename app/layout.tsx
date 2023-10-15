@@ -1,11 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 import Navbar from './components/Navbar';
 import Provider from './components/Provider';
 
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Noto_Sans({subsets: ['latin'], weight: '400'})
 
 export const metadata: Metadata = {
   title: 'K. Harsh Naidu | Front-End Developer',
