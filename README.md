@@ -1,5 +1,7 @@
 # My Personal portfolio
-Tech Stack:- 
+
+Tech Stack:-
+
 1. Next JS
 2. TypeScript
 3. React
@@ -8,11 +10,18 @@ Tech Stack:-
 6. Tailwind CSS
 
 ## npm Packages
+
 1. create-next-app@latest
 2. @tailwindcss/typography @tailwindcss/forms
-3. next-themes @headlessui/react @prisma/client 
+3. next-themes @headlessui/react @prisma/client
 4. next-sanity
 5. sanity
+
+### sanity server
+
+To deploy new projects to the sanity database.
+cd sanity
+npm run dev
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
