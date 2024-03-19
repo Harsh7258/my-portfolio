@@ -28,7 +28,7 @@ export default function Home() {
           Back-end Developer • MERN Stack Developer • Node.js & RESTful API design
           </p>
           <p className="text-gray-500 font-bold dark:text-gray-300 text-center">
-           MERN stack developer with experience in building secure backend systems for modern applications and RESTful API design.
+           Building secure backend systems for modern applications.
           </p>
 
           <div className="flex space-x-5 pt-6">
@@ -106,7 +106,7 @@ export default function Home() {
             Hi, I&apos;m Harsh. Nice to meet you.
           </p>
           <p>
-            Driven and versatile Entry-Level Backend & MERN Stack Developer with 1 year of experience building dynamic web applications. Eager to leverage strong front-end (React, JavaScript) and back-end (Node.js, Express) skills to contribute to a collaborative team environment and adept at designing and implementing efficient RESTful APIs to facilitate seamless data flow.
+            Driven and versatile Entry-Level Backend & MERN Stack Developer with 1 year of experience building dynamic web applications and secure backend systems for modern applications. Eager to leverage strong front-end (React, JavaScript) and back-end (Node.js, Express) skills to contribute to a collaborative team environment and adept at designing and implementing efficient RESTful APIs to facilitate seamless data flow.
           </p>
           <p>
             
