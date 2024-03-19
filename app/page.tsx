@@ -25,10 +25,10 @@ export default function Home() {
             K. Harsh Naidu
           </h3>
           <p className="text-gray-500 dark:text-gray-300 text-center">
-            Front End Developer
+          Back-end Developer • MERN Stack Developer • Node.js & RESTful API design
           </p>
           <p className="text-gray-500 font-bold dark:text-gray-300 text-center">
-          I design and code beautifully simple things.
+           MERN stack developer with experience in building secure backend systems for modern applications and RESTful API design.
           </p>
 
           <div className="flex space-x-5 pt-6">
@@ -89,7 +89,6 @@ export default function Home() {
             </a>
           </div>
 
-          <FramerMotion>
             <a href='resume1.pdf' download='resume.pdf'>
               <button 
               className='resume-btn'>
@@ -99,8 +98,7 @@ export default function Home() {
                     <span className='pl-2'>Resume</span>
                 </button>
               </a>
-          </FramerMotion>
-
+              
         </div>
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
@@ -108,7 +106,7 @@ export default function Home() {
             Hi, I&apos;m Harsh. Nice to meet you.
           </p>
           <p>
-            A goal-oriented Entry Level Frontend Developer with knowledge of HTML, CSS, JavaScript, React, Firebase, and Figma seeking to use technical proficiency and creativity to develop engaging user experiences and advance in a professional career. Looking to leverage effective debugging, code optimization and project collaboration capabilities to produce applications that exceed user expectations.
+            Driven and versatile Entry-Level Backend & MERN Stack Developer with 1 year of experience building dynamic web applications. Eager to leverage strong front-end (React, JavaScript) and back-end (Node.js, Express) skills to contribute to a collaborative team environment and adept at designing and implementing efficient RESTful APIs to facilitate seamless data flow.
           </p>
           <p>
             
