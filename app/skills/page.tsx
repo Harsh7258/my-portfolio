@@ -3,6 +3,8 @@ import techStack from '../../public/code.png';
 import Image from 'next/image';
 import BG from '../../public/bg.jpg';
 
+// edit skills page sone..
+
 export default function Skills(){
     return(
         <>
