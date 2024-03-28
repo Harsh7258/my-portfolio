@@ -24,6 +24,7 @@ async function getProjects() {
 
       const data = await client.fetch(query);
       // fetching data thorugh query
+    //   console.log(data)
 
       return data;
 }
