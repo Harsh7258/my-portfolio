@@ -94,7 +94,7 @@ export default function Home() {
             </a>
           </div>
 
-            <a href='Full-Stack-developer-K-Harsh-Naidu.pdf' download='/resumes/fullstack.pdf'>
+            <a href='/resumes/fullstack.pdf' download='/resumes/fullstack.pdf'>
               <button 
               className='resume-btn'>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
