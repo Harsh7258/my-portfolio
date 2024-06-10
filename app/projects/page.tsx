@@ -1,5 +1,10 @@
+"use client"
+
+import { useState, useEffect } from "react";
 import FramerMagnetic from "../components/FramerMotion";
 import { client } from "../lib/sanity";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Image from "next/image";
 
 interface Data {
@@ -11,30 +16,93 @@ interface Data {
     imageURL: string;
 }
 
-async function getProjects() {
-    const query = `*[_type == "project"] {
-        link,
-          title,
-          overview,
-          _id,
-          gitlink,
-          "imageURL": image.asset->url
-      }`;
-      // query of sanity project
-
-      const data = await client.fetch(query);
-      // fetching data thorugh query
-    //   console.log(data)
-
-      return data;
+async function getProjects(): Promise<Data[] | null> {
+    try {
+        
+        const query = `*[_type == "project"] {
+            link,
+              title,
+              overview,
+              _id,
+              gitlink,
+              "imageURL": image.asset->url
+          }`;
+          // query of sanity project
+    
+          const data = await client.fetch(query);
+          // fetching data thorugh query
+        //   console.log(data)
+    
+          return data;
+    } catch (error) {
+        console.error("Error fetching projects:", error);
+        return null;
+    } 
 }
 
-export default async function Projects() {
-    const data: Data[] = await getProjects();
+export default function Projects() { //async function 
+    // const data: Data[] = await getProjects();
+    const [data, setData] = useState<Data[] | null>(null);
+    const [loading, setLoading] = useState(true);
 
-    // console.log(data);
-    // log data in terminal
-    
+    useEffect(() => {
+        const fetchData = async () => {
+            const projects = await getProjects();
+            setData(projects);
+            setLoading(false);
+        };
+
+        fetchData();
+    }, []);
+
+    const toastAlert = () => toast.success("Redirected to Project Link!")
+    // console.log(data) 
+    //log data 
+
+    const SkeletonLoader = () => {
+        return (
+            <div className="projects-container">
+                <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+                    <h1 className="project-heading sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+                    All Projects
+                    </h1>
+                </div>
+                <div className="project-wrapper">
+                    {Array.from({ length: 6 }).map((val, index) => (
+                        <article key={index} className="project-card animate-pulse">
+                            <div className="h-56 w-full bg-gray-300 flex items-center" key={index}>
+                            <svg
+                                className="w-full h-14 text-gray-400 dark:text-gray-400"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 20 18"
+                                >
+                                <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
+                            </svg>
+                            </div>
+                            <div className="p-4 sm:p-6">
+                                <div className="h-6 bg-gray-300 mb-2 rounded-full"></div>
+                                <div className="h-4 bg-gray-300 mb-4 rounded-full"></div>
+                                <div className="h-4 bg-gray-300 mb-2 w-1/2 rounded-full"></div>
+                                <div className="flex space-x-4">
+                                    <div className="h-6 w-6 bg-gray-300 rounded-md"></div>
+                                    <div className="h-6 w-6 bg-gray-300 rounded-md"></div>
+                                </div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        );
+    };
+
+    if(loading){
+        return <SkeletonLoader/>
+    }
+    if (!data) {
+        return <div>No projects available.</div>;
+    }
 
     return (
         <>
@@ -53,6 +121,7 @@ export default async function Projects() {
                         <div className="h-56 w-full relative">
                             <Image fill src={project.imageURL}
                             alt="Image of the project"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="w-full h-full object-cover"/>
                         </div>
 
@@ -63,7 +132,7 @@ export default async function Projects() {
                                 </h3>
                             </a>
 
-                            <p className="card-overview">
+                            <p className="card-overview text-sm">
                                 {project.overview}
                             </p>
 

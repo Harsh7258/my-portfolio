@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import FramerMotion from './components/FramerMotion';
 import  Link  from 'next/link';
-
-import Me from '../public/me.png';
+import Me from '../public/mee.jpg';
 
 export default function Home() {
   return (
@@ -19,16 +18,22 @@ export default function Home() {
           <Image
             alt="Picture of me"
             src={Me}
-            className="h-48 w-48 rounded-full bg-teal-500 object-cover object-top"
+            className="h-48 w-48 rounded-full bg-transparent object-cover object-top"
+            placeholder='blur'
+            blurDataURL='../public/blur.jpg'
           />
-          <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+          <h3 className="pt-4 pb-2 text-2xl font-semibold leading-8 tracking-tight">
             K. Harsh Naidu
           </h3>
           <p className="text-gray-500 dark:text-gray-300 text-center">
-          Back-end Developer • MERN Stack Developer • Node.js & RESTful API design
+          Full-Stack Developer | Back-end Developer 
           </p>
-          <p className="text-gray-500 font-bold dark:text-gray-300 text-center">
-           Building secure backend systems for modern applications.
+          <p className="text-gray-500 dark:text-gray-300 text-center">
+          Node.js & RESTful API design
+          </p>
+
+          <p className="text-gray-500 dark:text-gray-300 text-center font-semibold">
+          Building Seamless & Secure Backend Solutions, End to End.
           </p>
 
           <div className="flex space-x-5 pt-6">
@@ -89,7 +94,7 @@ export default function Home() {
             </a>
           </div>
 
-            <a href='resume1.pdf' download='resume.pdf'>
+            <a href='Full-Stack-developer-K-Harsh-Naidu.pdf' download='/resumes/fullstack.pdf'>
               <button 
               className='resume-btn'>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -106,10 +111,16 @@ export default function Home() {
             Hi, I&apos;m Harsh. Nice to meet you.
           </p>
           <p>
-            Driven and versatile Entry-Level Backend & MERN Stack Developer with 1 year of experience building dynamic web applications and secure backend systems for modern applications. Eager to leverage strong front-end (React, JavaScript) and back-end (Node.js, Express) skills to contribute to a collaborative team environment and adept at designing and implementing efficient RESTful APIs to facilitate seamless data flow.
-          </p>
-          <p>
-            
+          Highly motivated and Entry-level Full Stack Developer with 1 year of experience
+          specializing in Node.js and NoSQL databases, complemented by over 2 years of
+          extensive experience in React.js. Proficient in developing robust and scalable web
+          applications using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
+          <br/>
+          Developed and maintained web applications using React.js, ensuring responsive and
+          user-friendly interfaces.
+          <br/>
+          Implemented backend services and RESTful APIs using Node.js and Express.js,
+          integrating with MongoDB for data management.
           </p>
         </div>
       </div>

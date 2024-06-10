@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "skill": "JavaScript",
+        "desc": "Language",
+        "image": "/images/js.png"
+    },
+    {
+        "id": 2,
+        "skill": "Node.js",
+        "desc": "Runtime Environment",
+        "image": "/images/node.png"
+    },
+    {
+        "id": 3,
+        "skill": "React.js",
+        "desc": "Framework",
+        "image": "/images/react.png"
+    },
+    {
+        "id": 4,
+        "skill": "Express.js",
+        "desc": "Framework",
+        "image": "/images/express.png"
+    },
+    {
+        "id": 5,
+        "skill": "MongoDB",
+        "desc": "Database",
+        "image": "/images/mongodb.png"
+    },
+    {
+        "id": 6,
+        "skill": "Git",
+        "desc": "Version Control",
+        "image": "/images/git.png"
+    },
+    {
+        "id": 7,
+        "skill": "HTML",
+        "desc": "Language",
+        "image": "/images/html.png"
+    },
+    {
+        "id": 8,
+        "skill": "CSS",
+        "desc": "Language",
+        "image": "/images/css.png"
+    },
+    {
+        "id": 9,
+        "skill": "Next.js",
+        "desc": "Framework",
+        "image": "/images/next.jpg"
+    },
+    {
+        "id": 10,
+        "skill": "Tailiwnd",
+        "desc": "Styling",
+        "image": "/images/tailwind.png"
+    },
+    {
+        "id": 11,
+        "skill": "Postman",
+        "desc": "Tool",
+        "image": "/images/download.png"
+    },
+    {
+        "id": 12,
+        "skill": "VS Code",
+        "desc": "Code Editor",
+        "image": "/images/vscode.png"
+    },
+    {
+        "id": 13,
+        "skill": "RESTful APIs",
+        "desc": "API development",
+        "image": "/images/restapi.png"
+    }
+]

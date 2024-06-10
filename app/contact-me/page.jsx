@@ -2,6 +2,8 @@
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import FramerMagnetic from "../components/FramerMotion";
 
 
@@ -15,8 +17,8 @@ export default function ContactMe(){
         emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_APIKEY)
         .then((result) => {
             console.log(result.text);
-            alert("Email send successfully! Thank you")
             e.target.reset();
+            toast.dark("Email send successfully! Thank you")
         }, (error) => {
             console.log(error.text);
         });
@@ -94,7 +96,7 @@ export default function ContactMe(){
                                 <textarea rows={4}
                                         className="input" 
                                         name='message'
-                                        placeholder="About Porject/Suggestion..."/> 
+                                        placeholder="About Project/Suggestion..."/> 
                             </div> 
                             <div className="flex justify-end">
                             <FramerMagnetic>

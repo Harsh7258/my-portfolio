@@ -14,7 +14,7 @@
 
 /* Nav section */
 .nav-wrapper{
-  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+  @apply max-w-6xl mx-auto px-4 md:px-8 sm:px-6
 }
 .nav-link-wrapper{
   @apply hidden sm:ml-6 sm:flex sm:space-x-8 sm:items-center
@@ -53,7 +53,7 @@
   @apply items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0
 }
 .resume-btn{
-  @apply bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-3xl mt-3 inline-flex items-center dark:text-black
+  @apply bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-3xl mt-3 inline-flex items-center dark:text-black
 }
 
 /* Projects page */
@@ -67,13 +67,13 @@
   @apply grid gap-y-8 sm:gap-6 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-10 pt-8 mb-8
 }
 .project-card{
-  @apply overflow-hidden dark:border-zinc-600 rounded-lg border border-gray-100 bg-white shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100
+  @apply overflow-hidden dark:border-zinc-600 rounded-lg border border-gray-100 bg-white shadow-lg dark:bg-black dark:shadow-gray-500 shadow-teal-100
 }
 .card-title{
-  @apply text-lg font-medium text-gray-900 dark:text-white
+  @apply text-base font-semibold text-gray-900 dark:text-white
 }
 .card-overview{
-  @apply line-clamp-2 mt-2 text-sm leading-relaxed text-gray-500 dark:text-gray-400
+  @apply line-clamp-2 mt-1 leading-relaxed text-gray-500 dark:text-gray-400
 }
 .card-link{
   @apply mt-4 inline-flex items-center gap-1 text-sm font-medium text-teal-500 
